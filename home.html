@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Covid 19 Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/bootstrap.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/font-mfizz.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div id="loader"></div>
+
+      <section class="content">
+        <div class="container">
+          <div class="logo-wrapper">
+            <img width="500" src="assets/images/covid19.png" />
+          </div>
+          <div class="countries-wrapper">
+            <div class="form-group col-md-4">
+              <label for="country">Select Countries</label>
+              <select id="selectcountry" name="currentcountry"> </select>
+            </div>
+          </div>
+          <div class="cards-wrapper">
+            <div id="summary"></div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="summaryChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
